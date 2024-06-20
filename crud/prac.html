@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('bb.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background:transparent ;
+            width: 100%;
+            height:100%;
+            backdrop-filter: blur(20px);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color:azure;
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .menu-item-details {
+            flex: 1;
+        }
+
+        .menu-item-name {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .menu-item-price {
+            color: #777;
+        }
+
+        .menu-item-description {
+            color: #999;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .menu-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu-item img {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu</h1>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150" alt="Item Image">
+            <div class="menu-item-details">
+                <div class="menu-item-name">Item Name 1</div>
+                <div class="menu-item-price">$10.99</div>
+                <div class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150" alt="Item Image">
+            <div class="menu-item-details">
+                <div class="menu-item-name">Item Name 2</div>
+                <div class="menu-item-price">$8.99</div>
+                <div class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150" alt="Item Image">
+            <div class="menu-item-details">
+                <div class="menu-item-name">Item Name 3</div>
+                <div class="menu-item-price">$12.99</div>
+                <div class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150" alt="Item Image">
+            <div class="menu-item-details">
+                <div class="menu-item-name">Item Name 4</div>
+                <div class="menu-item-price">$9.99</div>
+                <div class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150" alt="Item Image">
+            <div class="menu-item-details">
+                <div class="menu-item-name">Item Name 5</div>
+                <div class="menu-item-price">$11.99</div>
+                <div class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/150" alt="Item Image">
+            <div class="menu-item-details">
+                <div class="menu-item-name">Item Name 6</div>
+                <div class="menu-item-price">$7.99</div>
+                <div class="menu-item-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

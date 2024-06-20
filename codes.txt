@@ -1,0 +1,108 @@
+<?php
+include 'connect.php';
+if(isset($_POST['submit'])){
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $mobile=$_POST['mobile'];
+    $password=$_POST['password'];
+
+
+    $sql="insert into crud (name,email,mobile,password)
+    values('$name','$email','$mobile','$password')";
+    $result=mysqli_query($con,$sql);
+
+    if($result){
+        echo "data inserted successfully";
+    }else{
+        die(mysqli_error($con));
+    }
+}
+
+
+?>
+
+
+
+/////
+
+user
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="user.php">Home </a>
+            <a href="about.php">About</a>
+            <a href="services.php">Services</a>
+            <a href="contact.php">Contact </a>
+        </nav>
+    </header>
+
+     <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <h2 class="logo"><i class='bx bxl-netlify' style='color:rgb(240, 231, 231)'  ></i>Internet cafe</h2>
+            <div class="text-sci">
+                <h2>Welcome<br><span > To Our Website</span></h2>
+                <p>"Surf, Sip, and Stay Connected: Your Refreshing Internet Oasis"</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form id="loginForm">
+                    <h2>Sign In</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxl-gmail'></i></span>
+                        <input type="email" id="loginEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" id="loginPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <label>
+                            <input type="checkbox">Remember me
+                        </label>
+                        <a href="#">Forget password?</a>
+                    </div>
+                    <button type="button" onclick="submitLoginForm()" class="btn">Sign In</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign-up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function submitLoginForm() {
+            // Get values from the form
+            var email = document.getElementById("loginEmail").value;
+            var password = document.getElementById("loginPassword").value;
+
+            // You can perform validation here if needed
+
+            // Redirect to the desired website
+            window.location.href = "menu.php"; // Change this URL to your desired destination
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internet Cafe Services</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bb.jpg'); /* Add your background image URL here */
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0); /* Add opacity to make text readable */
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #ce0070 ;
+    
+  }
+  .service {
+    margin-bottom: 20px;
+  }
+  .service h2 {
+    color: blue;
+  }
+  .service p {
+    color: #f0edf8d9;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Welcome to Our Internet Cafe!</h1>
+  
+  <div class="service">
+    <h2>Internet Access</h2>
+    <img src="intrnt.jpg" alt="Internet Access" style="width: 100px;">
+    <p>Enjoy high-speed internet connectivity for all your browsing needs.</p>
+  </div>
+  
+  <div class="service">
+    <h2>Computer Rentals</h2>
+    <img src="compter.jpg" alt="Computer Rentals" style="width: 100px;">
+    <p>Access our state-of-the-art computers for your work or entertainment.</p>
+  </div>
+  
+  
+  
+  <div class="service">
+    <h2>Soft Drinks  & Beverages Available</h2>
+    <img src="juice.jpg" alt="Soft Drinks & Beverages Available" style="width: 100px;">
+    <p>Quench your thirst with a variety of refreshing drinks.</p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+user main page
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="login.html">Home </a>
+            <a href="about.php">About</a>
+            <a href="services.php">Services</a>
+            <a href="contact.php">Contact </a>
+        </nav>
+    </header>
+
+     <div class="background"></div>
+    <div class="container">
+        <div class="content">
+            <h2 class="logo"><i class='bx bxl-netlify' style='color:rgb(240, 231, 231)'  ></i>Internet cafe</h2>
+            <div class="text-sci">
+                <h2>Welcome<br><span > To Our Website</span></h2>
+                <p>"Surf, Sip, and Stay Connected: Your Refreshing Internet Oasis"</p>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form id="loginForm">
+                    <h2>Sign In</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxl-gmail'></i></span>
+                        <input type="email" id="loginEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" id="loginPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forget">
+                        <label>
+                            <input type="checkbox">Remember me
+                        </label>
+                        <a href="#">Forget password?</a>
+                    </div>
+                    <button type="button" onclick="submitLoginForm()" class="btn">Sign In</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign-up</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function submitLoginForm() {
+            // Get values from the form
+            var email = document.getElementById("loginEmail").value;
+            var password = document.getElementById("loginPassword").value;
+
+            // You can perform validation here if needed
+
+            // Redirect to the desired website
+            window.location.href = "https://example.com"; // Change this URL to your desired destination
+        }
+    </script>
+</body>
+</html>
